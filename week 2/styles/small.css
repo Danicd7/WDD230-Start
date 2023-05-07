@@ -3,7 +3,6 @@ body {
     font-size: 16px;
     margin: 0;
     background-color: #474749bb;
-    color: #ffffffe3;
 }
 
 header, main, section, footer {
@@ -12,7 +11,7 @@ header, main, section, footer {
     overflow: hidden;
 }
 
-header,section,footer {
+header, section, footer {
     background-color: #474749bb;
 }
 
@@ -38,12 +37,6 @@ h2 {
 }
 
 /* MAIN */
-main {
-    width: 100%;
-    margin: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 h3 {
     margin: 0;
     font-size: 1.5rem;
@@ -71,7 +64,7 @@ section {
 
 img {
     display: block;
-    max-width: 50rem;
+    max-width: 100%;
     margin: auto;
     border-radius: 10px;
 }
@@ -81,16 +74,12 @@ p {
     line-height: 1.75rem;
 }
 
-a {
-    color: #649AF2;
-}
-
-a:hover {
-    color: #fff;
-    font-weight: 700;
-}
-
 /* FOOTER */
-footer p {
+footer {
     text-align: center;
+}
+#lastModified {
+    text-align: center;
+	font-size: smaller;
+    display: grid;
 }
