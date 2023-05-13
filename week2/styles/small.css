@@ -37,6 +37,9 @@ h2 {
 }
 
 /* MAIN */
+main {
+    display: flex;
+}
 h3 {
     margin: 0;
     font-size: 1.5rem;
@@ -46,13 +49,7 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/*.box1, .box2, .box3 {
-    margin: 1rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    box-shadow: 5px 5px 10px #30303049;
-    border: 1px black;
-}*/
+
 
 .heading-wrapper {
     background-color: #474749bb;

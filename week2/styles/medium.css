@@ -1,11 +1,10 @@
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (max-width: 850px) {
     /* MAIN */
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
+       padding: 40px;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 40px 40px;
     }
     section {
         margin-bottom: 0;
