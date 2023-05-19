@@ -15,5 +15,7 @@ document.querySelector(
 
 
 // today header
+const p = document.querySelector("#today");
+
 const fulldate = `${dayName}, ${day} ${monthName} ${year}`;
 document.getElementById("today").textContent = fulldate;
