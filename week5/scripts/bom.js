@@ -1,10 +1,12 @@
-// Year actualization 
+//Year actualization 
 document.querySelector(
 	"#lastModified"
 ).textContent = `Last Update: ${document.lastModified}`;
 
+const input = document.querySelector("#favchap");
+const button = document.querySelector("#submit");
+const list = document.querySelector("#list");
 
-// Book of Mormon favorite chapters
 button.addEventListener('click', function() {
     if (input.value != '') {
         const listItem = document.createElement('li');
@@ -25,3 +27,4 @@ button.addEventListener('click', function() {
         input.focus();
     }
 });
+
