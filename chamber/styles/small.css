@@ -175,3 +175,8 @@ footer img:hover {
     grid-row: 1 / 2;
     z-index: -1;
 }
+
+#weather {
+    background-color: rgba(0, 0, 249, 0.727);
+    border-radius: 6px;
+}
