@@ -6,3 +6,14 @@ main figure.myphoto {
 
 main figure.myphoto img { width:100%;}
 main figure.myphoto figcaption {text-align: center; font-size: .75rem; }
+
+header figure.logo {
+    flex: left;
+    margin: 0 2% 0 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
