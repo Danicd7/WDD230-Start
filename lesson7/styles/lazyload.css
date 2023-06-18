@@ -22,14 +22,11 @@ img {
 
 img {
     margin: auto;
-    filter: blur(0px);
     transition: filter 0.5s;
     align-items: center;
     display: grid;
 }
-img[data-src] {
-    filter: blur(5px);
-}
+
 
 
 footer {
