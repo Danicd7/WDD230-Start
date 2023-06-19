@@ -25,6 +25,13 @@ img {
     transition: filter 0.5s;
     align-items: center;
     display: grid;
+    object-position: center;
+    object-fit: cover;
+}
+
+.blur-load {
+    background-size: cover;
+    background-position: center;
 }
 
 
