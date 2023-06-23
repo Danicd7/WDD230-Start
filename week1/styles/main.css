@@ -1,5 +1,7 @@
 
+
 body {
+    margin: auto;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -29,14 +31,18 @@ picture{
 }
 
 h1 {
+    text-shadow: 0 0 15px #292929;
+    color: antiquewhite;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-    font-size: 1rem;
+    text-shadow: 0 0 15px #3c3c3cef;
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #acacac;
 }
 
 ul {
@@ -53,12 +59,12 @@ header img {
 
 
 footer {
+    font-size: 12px;
     border-radius: 6px;
     background-color: #52BE80;
     display: grid;
     justify-content: center;
     line-height: 2.75em;
-    font-size: smaller;
     box-shadow: 2px 2px 2px 2px;
     font-family: 'Lora', serif;
   }
