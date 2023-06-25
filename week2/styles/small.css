@@ -5,10 +5,10 @@ body {
     background-color: #474749bb;
 }
 
-header, main, section, footer {
+header, main, footer {
     max-width: 64rem;
-    margin: 0 auto;
     overflow: hidden;
+    margin: auto;
 }
 
 header, section, footer {
@@ -20,9 +20,7 @@ h1, h2, h3 {
 }
 
 /* HEADER */
-header {
-    margin-bottom: 1.5rem;
-}
+
 
 h1, h2 {
     text-align: center;
@@ -38,21 +36,24 @@ h2 {
 
 /* MAIN */
 main {
-    display: flex;
+    display: grid;
 }
+
+
+
 h3 {
     margin: 0;
     font-size: 1.5rem;
 }
 
 section {
-    margin-bottom: 1.5rem;
+    border-radius: 20px;
+    
 }
-
-
 
 .heading-wrapper {
     background-color: #474749bb;
+    border-radius: 20px;
 }
 
 .heading-wrapper, .text-wrapper {
