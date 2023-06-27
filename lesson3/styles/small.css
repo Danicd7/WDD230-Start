@@ -1,0 +1,253 @@
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    background-color:  #00000009;
+  }
+  body {
+    font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #00000009;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+  }
+  main{
+    max-width: 760px;
+    margin: 1.5rem auto;
+    padding: 3%;
+  }
+  
+  .logo-wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: 70px;
+    justify-content: center;
+  }
+  .domain-wrapper{
+    display: flex;
+    max-width: 100%;
+    margin: 30px;
+    justify-content: center;
+  }
+ 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: black;  
+  }
+  header {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    text-align: center;
+    color:  #ffffff; 
+    background-color: #0000009a;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  header > h1, header > h2 {
+    color: #ffffff; 
+  }
+  
+  p {
+    font-family: 'Lora', serif;
+    color: black; 
+    padding: 1em;
+  }
+  
+  .colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #ffffff;
+  }
+  .secondary {
+    background-color: #0000009a;
+  }
+  .accent1 {
+    background-color: #32528875;
+  }
+  .accent2{
+    background-color:  #00000062;
+  }
+  
+  p.colored {
+    background-color: #0000009a;
+    color: #ffffff; 
+  }
+  
+  nav {
+    background-color: #00000062;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+  }
+  nav > ul {
+    list-style-type: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li a {
+    padding:1em;
+    display: block;
+    min-width: 70px;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color:  #ffffff;
+    font-size: 0.95rem;
+    border-top: 1px solid rgb(0, 0, 0,0.5);
+  }
+  nav ul li.active  {
+    background-color:  #32528831;
+    color: #fff;
+}
+  nav a:link, nav a:visited {
+    color: #ffffff;
+  }
+  nav ul li a:hover {
+    color: #ffffff;
+    background-color: #32528875;
+    border-radius: 3px;
+  }
+  
+  
+  .sm-home {
+    grid-area: home;
+    background-color: #999;
+    line-height: 3em;
+  }
+  .sm-page2 {
+    grid-area: page2;
+    background-color: #999;
+    line-height: 3em;
+  }
+  .sm-page3 {
+    grid-area: page3;
+    background-color: #999;
+    line-height: 3em;
+  }
+  
+  .top {
+    grid-area: top;
+    border-left: 1px solid;
+  }
+  
+  .left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  
+  .right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
+
+  footer {
+    margin: auto;
+    font-size: smaller;
+    display: grid;
+    justify-content: center;
+    line-height: 2.75em;
+    font-family: 'Lora', serif;
+  }
+
+#lastModified {
+  margin: auto;
+    text-align: center;
+	font-size: smaller;
+    display: grid;
+    
+}
+
+/* personas and scenarios */
+
+main {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+  font-family: 'Lora', serif;
+  margin: 20px;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+#tarjet-contet{
+  justify-content: center;
+  align-items: center;
+}
+#personas {
+  display: flex;
+}
+
+.persona1, .persona2 {
+  margin-top: 30px;
+}
+
+.persona1 {
+  margin-right: 10px;
+}
+.persona1, .persona2
+{
+  width: 100%; 
+  height: auto;
+}
+
+.persona1, .persona2, .scenario .audience {
+  padding: 1em;
+  font-family:'Lora', serif;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  margin: 0;
+}
+
+mark {
+  background-color:  #f0f0f0;
+  color: rgb(44, 5, 112);
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Lora', serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+

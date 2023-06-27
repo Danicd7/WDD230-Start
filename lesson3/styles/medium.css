@@ -1,0 +1,16 @@
+@media only screen and (min-width: 35em)  {
+
+    nav > ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: 2vw;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        padding: 0.75rem;
+        justify-content: center;
+      
+      }
+
+
+}
