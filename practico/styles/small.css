@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color:  #00000009;
+  }
+
+body {
+    max-width: 900px;
+	margin: 0 auto;
+    background-color: #00000009;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 1em;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5 h6 {
+    font-family: 'Roboto', sans-serif;
+    color:black;
+}
+/*h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.25em;
+}*/
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0000009a;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    text-align: left;
+    font-size: 1em;
+}
+header a {
+    text-decoration: none;
+}
+#topNav {
+    display: grid;
+    grid-template-columns: 110px auto 80px 70px;
+}
+#logo {
+    text-align: center;
+    align-self: center;
+}
+#logo img {
+    margin: 5px 20px 5px 5px;
+    height: 33px;
+}
+#socialNetwork {
+    align-self: center;
+}
+#socialNetwork img {
+    padding: 5px;
+    height: 25px;
+    transition: .5s;
+}
+#socialNetwork img:hover {
+    height: 29px;
+}
+header button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+nav {
+    background-color: #00000062;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  nav a {
+    padding:1em;
+    min-width: 70px;
+    text-decoration: none;
+  }
+  nav a:link, nav a:visited {
+    color:  #ffffff;
+  }
+  nav a:hover {
+    color:  #ffffff;
+    background-color: #32528875;
+    border-radius: 3px;
+  }
+
+nav ul.open {
+    display:block;
+}
+#menuButton span:nth-child(1) {display: block;}
+#menuButton span:nth-child(2) {display: none;}
+#menuButton.open span:nth-child(1) {display: none;}
+#menuButton.open span:nth-child(2) {display: block;}
+
+main div {
+    border: 1px solid #b8b8b8e2;
+    min-height: 100px;
+    margin: 5px;
+}
+#join {
+    display: none;
+}
+#spotlight3 {
+    display:none;
+}
+
+footer {
+    border-radius: 6px;
+    border-top: 1px solid;
+}
+#logoFooter {
+    height: 100px;
+}
+footer h2 {
+    font-size: 18px;
+}
+footer a {
+    color: #222222;
+}
+footer img {
+    padding: 5px;
+    height: 25px;
+    transition: .5s;
+}
+footer img:hover {
+    height: 29px;
+}
+#contact {
+    display: block;
+    align-self: center;
+}
+#endFooter {
+    grid-template-columns: 1fr max-content repeat(3, max-content);
+    border-radius: 6px;
+    font-size: 12px;
+    border-top: 1px solid;
+    margin: 10px 0;
+    padding-bottom: 1px;
+
+}
+
+/* home page */
+
+#hero {
+    display: grid;
+}
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: -1;
+}
+
+#weather {
+    background-color: rgba(0, 0, 249, 0.727);
+    border-radius: 6px;
+}
+
+/* discover page*/
+
+#gallery {
+    display: grid;
+}
+#gallery img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+} 
+
+#gallery figure a img {
+    max-width: 100%;
+}
+
+
+.pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*----------- JOIN PAGE FORM --------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label .top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+} 
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+} 
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}

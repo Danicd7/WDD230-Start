@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Daniel Caetano">
-    <meta name="description" content="Chamber of commerce of Madrid, Spain">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
-    <title>Chamber of Commerce | Madrid | Spain</title>
-</head>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniel Caetano">
+        <meta name="description" content="Chamber of commerce of Madrid, Spain">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+        <title>Chamber of Commerce | Madrid | Spain</title>
+    </head>
 <body>
-    <div id="bannertemp">
-        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    <div id="banner">
+        <span></span>
     </div>
     <header>
         <div id="topNav">
@@ -29,17 +27,18 @@
                 Madrid<br>Chamber of Commerce
             </h1>
             <div id="socialNetwork">
-                <a href="https://www.twitter.com" target="_blank">
+                <a href="https://www.twitter.com"  target="_blank">
                     <img src="images/twitter.png" alt="twitter logo">
                 </a>
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com"  target="_blank">
                     <img src="images/facebook.png" alt="Facebook logo">
                 </a>
             </div>
+                <button id="menuButton"><span>&#9776</span><span>X</span></button>
         </div>
         <nav>
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
+            <ul>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
@@ -48,13 +47,20 @@
         </nav>
         <div class="dates">
             <p class="today"></p>
+            <p class="datesLink"></p>
+            <p class="lastVisit"></p>
         </div>
     </header>
     <main>
         <div id="hero">
-            <p>
-                hero with site name and call to action
-            </p>
+            <figure class="myphoto">
+                <img src="images/wdd230-org.jpg" alt= "wdd230"
+                srcset="images/wdd230-org400.jpg 200w
+                        images/wdd230-org500.jpg 500w
+                        images/wdd230-org800.jpg 800w
+                        images/wdd230-org800.jpg 1100w">
+            </figure>
+
         </div>
         <div id="event">
             <p>
@@ -62,8 +68,15 @@
             </p>
         </div>
         <div id="weather">
+            <h3>Weather</h3>
+            <h4>Today</h4>
             <p>
-                Weather
+                <p>
+                    <span id="temp"></span>28 °C<br>
+                    Wind Speed: <span id="windSpeed">5</span> km/h<br>
+                    Wind chill: <span id="windChill">N/A</span>
+                </p>
+
             </p>
         </div>
         <div id="news">
@@ -93,10 +106,8 @@
                 Join
             </p>
         </div>
-
     </main>
-    <hr>
-    <div id="foot">
+    <footer>
         <a id="logoFooter">
             <img src="images/Madridgo.png" alt="logo: the name of the web with the stars from Madrid's flag">
         </a>
@@ -111,12 +122,11 @@
             <p>+34 755 678 890</p>
             <a href="https://www.google.com/maps/place/Moratalaz,+28030+Madrid/@40.4056108,-3.663299,14z/data=!3m1!4b1!4m6!3m5!1s0xd4225ecd0c5bf63:0x2df9c554f8298330!8m2!3d40.4072203!4d-3.6570055!16zL20vMGgyMXJw?authuser=0"  target="_blank"><img src="images/place.png" alt="map pointer icon">Location map</a>
         </div>
-    </div>
-    <footer>
+        <div id="endFooter">
         &copy; 2023 | Daniel C. C. Da Silva | Madrid Chamber of commerce | WDD230 Project | Madrid
         <span id="lastModified"></span>
         </div>
       </footer>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>
