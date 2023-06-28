@@ -68,10 +68,16 @@ const d = new Date();
 // today header
 document.querySelector(".today").textContent = transformDate(d);
 
-
+	
 // TEMPORAL BANNER
-if (new Date().getDay() == 1 || new Date().getDay() == 2) {
-    document.querySelector("#bannertemp").style.display = "block";} 
+const currentDate = new Date();
+const currentDay = currentDate.getDay();
+
+// Check if it's Monday '1' or Tuesday '2'
+if (currentDay === 1 || currentDay === 2) {
+	//Show the banner
+	document.getElementsById('banner').style.display ='block';
+}
 
 // lastModified	
 document.querySelector(
