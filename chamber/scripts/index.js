@@ -83,3 +83,7 @@ if (currentDay === 1 || currentDay === 2) {
 document.querySelector(
 	"#lastModified"
 ).textContent = `Last Update: ${document.lastModified}`;
+
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector("#currentyear").textContent = year;
