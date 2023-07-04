@@ -1,4 +1,11 @@
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector("#currentyear").textContent = year;
 
+// lastModified	
+document.querySelector(
+	"#lastModified"
+).textContent = `Last Update: ${document.lastModified}`;
 
 
 // toggle menu
@@ -68,15 +75,6 @@ function transformDateHour(dateSource) {
 
 const d = new Date();
 
-
-// lastModified	
-document.querySelector(
-	"#lastModified"
-).textContent = `Last Update: ${document.lastModified}`;
-
-const date = new Date();
-const year = date.getFullYear();
-document.querySelector("#currentyear").textContent = year;
 
 // today header
 document.querySelector(".today").textContent = transformDate(d);
