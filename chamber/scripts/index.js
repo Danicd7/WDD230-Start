@@ -1,3 +1,6 @@
+
+
+
 // toggle menu
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
@@ -65,6 +68,16 @@ function transformDateHour(dateSource) {
 
 const d = new Date();
 
+
+// lastModified	
+document.querySelector(
+	"#lastModified"
+).textContent = `Last Update: ${document.lastModified}`;
+
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector("#currentyear").textContent = year;
+
 // today header
 document.querySelector(".today").textContent = transformDate(d);
 
@@ -78,12 +91,3 @@ if (currentDay === 1 || currentDay === 2) {
 	//Show the banner
 	document.getElementsById('banner').style.display ='block';
 }
-
-// lastModified	
-document.querySelector(
-	"#lastModified"
-).textContent = `Last Update: ${document.lastModified}`;
-
-const date = new Date();
-const year = date.getFullYear();
-document.querySelector("#currentyear").textContent = year;

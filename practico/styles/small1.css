@@ -1,0 +1,114 @@
+nav, footer, main{
+    background-color: black;
+    margin-top: .9rem;
+    font-family: 'Montserrat';
+    font-weight: 400; 
+}
+
+.logo{
+    margin-top: 10px;
+    margin-bottom: -7px;
+}
+/*nav ul{
+    display:block;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #104d93ee;
+    position: relative;
+    Right: 180%;
+    transition:0.4s;
+    margin-bottom:-220px;
+}*/
+
+/* NAVIGATION */
+nav ul.open{
+    display: block;
+    text-align: center;
+    Right: 0;
+    margin-bottom:0;
+}
+
+nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav ul li a{
+    display: block;
+    padding:.8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    /* border-top: 1px solid rgba(0,0,0,0.5); */
+    color: black;
+    transition: transform .4s;
+}
+
+/*nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}*/
+
+
+nav ul li a:hover{
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);}
+
+/* HAMBURGER */
+#hamburgerBtn{
+    float: right;
+    margin-top: -3.2rem;
+    margin-right:10px;
+    justify-self: right;
+    /* width: 30px;
+    height:30px; */
+    transition: transform .2s;
+}
+
+#hamburgerBtn.open .bar:nth-child(2){
+    opacity:0;
+  }
+  #hamburgerBtn.open .bar:nth-child(1){   transform:translateY(8px) rotate(45deg);
+  }
+  #hamburgerBtn.open .bar:nth-child(3){   transform:translateY(-8px) rotate(-45deg);
+  }
+
+#hamburgerBtn:focus{
+    border: none;
+}
+
+.icon_t img{
+    width:30px;
+   float:right;
+    margin-right: 65px;
+    margin-top:-36px;
+    transition: transform .4s;   
+}
+
+.icon_f img{
+    width:30px;
+   float:right;
+    margin-right: 110px;
+    margin-top:-36px;
+    transition: transform .4s;
+}
+
+.icon_f img:hover, .twitter_t img:hover, #hamburgerBtn:hover{
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+nav ul#primaryNav{
+    display: flex;
+    margin-top: 30px;  
+    margin-right:150px;
+    background-color: white;
+    Right:0;
+    margin-bottom: 0;
+}

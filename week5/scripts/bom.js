@@ -1,8 +1,15 @@
 //Year actualization 
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector("#currentyear").textContent = year;
+
+
 document.querySelector(
 	"#lastModified"
 ).textContent = `Last Update: ${document.lastModified}`;
 
+
+//the bom script 
 const input = document.querySelector("#favchap");
 const button = document.querySelector("#submit");
 const list = document.querySelector("#list");

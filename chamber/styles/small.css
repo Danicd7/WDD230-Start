@@ -118,7 +118,17 @@ nav ul {
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
+
+.today {
+    color: white;
+}
 /*----------- MAIN --------------*/
+
+main {
+    max-width: 64rem;
+    margin:auto;
+    
+}
 main div {
     border: 1px solid #b8b8b8e2;
     min-height: 100px;
@@ -177,7 +187,6 @@ footer {
 
 #lastModified {
     margin: auto;
-      text-align: center;
-      display: grid;
-      
-  }
+    text-align: center;
+    display: grid;    
+}
